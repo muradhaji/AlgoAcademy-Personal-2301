@@ -1,0 +1,85 @@
+h1 {
+  border: 2px solid red;
+}
+
+a {
+  border: 6px solid green;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+}
+
+/* a.a2 {
+  position: static;
+} */
+
+/* a.a2 {
+  position: relative;
+  left: 20px;
+  top: 50px;
+  right: 40px;
+  bottom: 30px;
+} */
+
+/* a.a2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 40px;
+  bottom: 40px;
+} */
+
+/* .parent {
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  position: relative;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  top: 50px;
+  left: 50px;
+} */
+
+/* div.fixedDiv {
+  width: 200px;
+  height: 100px;
+
+  background-color: red;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+} */
+
+body {
+  width: 4000px;
+}
+
+h1.special {
+  position: relative;
+  border: black;
+  background-color: green;
+  color: white;
+  z-index: -2;
+}
+
+h1.specialH {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 200px;
+  z-index: -1;
+}

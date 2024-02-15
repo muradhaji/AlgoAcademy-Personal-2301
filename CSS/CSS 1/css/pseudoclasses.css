@@ -1,0 +1,19 @@
+/* p:first-child {
+  color: red;
+} */
+
+/* .horizontal > a {
+  margin-right: 20px;
+}
+
+.horizontal > a:last-child {
+  margin-right: 0;
+} */
+
+/* p:last-child {
+  color: red;
+} */
+
+/* p:lang(ru) {
+  color: red;
+} */

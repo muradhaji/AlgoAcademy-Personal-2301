@@ -1,0 +1,57 @@
+/* body {
+  background-color: rgba(255, 0, 0, 0.5);
+} */
+
+/* div.div1 {
+  background-color: rgba(0, 255, 0, 0.5);
+} */
+
+/* div.div1 {
+  background-color: rgb(0, 255, 0);
+  opacity: 0.5;
+} */
+
+div {
+  height: 400px;
+  width: 400px;
+  /* overflow: auto; */
+  border: 2px solid black;
+
+  /* background-image: url(../images/bg1.PNG); */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right;
+  background-position-y: bottom; */
+
+  /* Shorthand */
+  /* background-position: right bottom; */
+
+  /* background-attachment: scroll; */
+
+  /* background-size: 100% 100%; */
+
+  /* border: 30px solid rgba(0, 0, 0, 0.1);
+  padding: 30px; */
+
+  /* background-origin: padding-box; */
+  /* background-origin: border-box; */
+  /* background-origin: content-box; */
+  /* background-image: url(../images/bg1.PNG), url(../images/bg2.PNG);
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
+  background-blend-mode: color; */
+  background: url(../images/bg1.PNG),
+    url(../images/bg2.PNG) bottom right / 80% 80% no-repeat no-repeat;
+}
+
+.div1 {
+  /* background-clip: border-box; */
+  /* background-origin: border-box; */
+}
+.div2 {
+  /* background-clip: padding-box; */
+  /* background-origin: padding-box; */
+}
+.div3 {
+  /* background-clip: content-box; */
+  /* background-origin: content-box; */
+}

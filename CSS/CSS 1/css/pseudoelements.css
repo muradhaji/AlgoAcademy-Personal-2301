@@ -1,0 +1,39 @@
+/* div::first-line {
+  color: red;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: blue;
+}
+
+span {
+  display: block;
+}
+
+span::first-line {
+  color: red;
+} */
+
+/* div::first-letter {
+  color: red;
+  font-size: 48px;
+  margin-left: 40px;
+} */
+
+/* h1.special::before {
+  content: 'Hello ';
+  color: red;
+  background-color: blue;
+}
+
+h1.special::after {
+  content: " How Are You?";
+} */
+
+/* li::marker {
+  color: red;
+} */
+
+div.special::selection {
+  background-color: orangered;
+  color: black;
+}

@@ -1,0 +1,29 @@
+div.parent {
+  position: relative;
+}
+
+div.parent img {
+  width: 100%;
+}
+
+div.parent h1 {
+  position: absolute;
+
+  
+  top: 0;
+  left: 0;
+  
+  top: 50%;
+  left: 50%;
+  
+  /* translate: -50% -50%; */
+  translate: -50% -50%;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ab815d;
+  margin: 0;
+  padding: 32px;
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 48px;
+}
+

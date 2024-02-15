@@ -1,0 +1,65 @@
+/* .basliq {
+  color: white;
+}
+
+.vacibbasliq {
+  background-color: red;
+}
+
+.ikinciderecebasliq {
+  background-color: blue;
+} */
+
+/* h1.vacibbasliq {
+  background-color: red;
+  color: white;
+} */
+
+/* #bslq1 {
+  background-color: aqua;
+  color: tomato;
+} */
+
+/* #1bslq {
+  background-color: aqua;
+  color: tomato;
+} */
+
+/* p#bslq-1 {
+  background-color: aqua;
+  color: tomato;
+} */
+
+a.button {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: rgb(179, 179, 179);
+  color: white;
+}
+
+a.dangerButton {
+  background-color: red;
+}
+
+a.warningButton {
+  background-color: rgb(255, 177, 33);
+}
+
+a.button.successButton {
+  background-color: green;
+}
+
+a.successOutlinedButton {
+  border: 2px solid green;
+  color: green;
+  background-color: transparent;
+}
+
+a.lightGrayButton {
+  background-color: rgb(179, 179, 179);
+  color: black;
+}

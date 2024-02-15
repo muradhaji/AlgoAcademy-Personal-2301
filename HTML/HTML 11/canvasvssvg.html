@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas width="200" height="100" id="testCanvas"></canvas>
+
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="50" stroke="red" stroke-width="14" fill="transparent" />
+  </svg>
+
+  <img src="Logo.svg" alt="" width="100%">
+
+  <script>
+    const myCanvas = document.getElementById('testCanvas');
+    const myCTX = myCanvas.getContext('2d');
+
+    myCTX.moveTo(0, 0);
+    myCTX.lineTo(200, 100);
+    myCTX.stroke();
+
+    myCTX.moveTo(200, 0);
+    myCTX.lineTo(0, 100);
+    myCTX.stroke();
+
+    myCTX.font = "30px Arial";
+    myCTX.fillText("Hello World", 10, 50);
+  </script>
+
+</body>
+
+</html>

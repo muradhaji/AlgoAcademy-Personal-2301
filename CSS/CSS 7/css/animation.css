@@ -1,0 +1,105 @@
+div {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+}
+
+div.positioned {
+  position: absolute;
+  left: 200px;
+  background-color: orangered;
+  z-index: -1;
+}
+
+div.animated {
+  background-color: darkcyan;
+  animation-name: test1;
+
+  animation-duration: 3s;
+
+  /* animation-delay: 2s; */
+
+  /* animation-timing-function: cubic-bezier(.1,.96,.92,.05); */
+
+  /* animation-direction: normal; */
+  /* animation-direction: reverse; */
+  animation-direction: alternate-reverse;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes test1 {
+  /* from {
+    background-color: black;
+    width: 120px;
+  } */
+  /* to {
+    background-color: orangered;
+    width: 200px;
+  } */
+  /* 0% {} */
+  from {
+  }
+  to {
+    width: 300px;
+  }
+  /* 100% {} */
+}
+
+h1 {
+  position: relative;
+}
+
+h1:hover::before {
+  scale: 1 1;
+  transform-origin: left;
+}
+
+h1::before {
+  transition: scale 0.3s ease;
+
+  content: ' ';
+  display: block;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  scale: 0 1;
+  transform-origin: right;
+
+  background-color: lightblue;
+  z-index: -1;
+}
+
+div.test3 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+
+  translate: 50px 50px;
+
+  animation-name: lefttoright;
+  animation-duration: 3s;
+  animation-timing-function: steps(10);
+  /* animation-iteration-count: infinite; */
+
+  animation-fill-mode: both;
+
+}
+
+div.test3:hover {
+  animation-play-state: paused;
+}
+
+@keyframes lefttoright {
+  from {
+    translate: 0px 0px;
+  }
+  to {
+    translate: 200px 0px;
+  }
+}

@@ -1,0 +1,53 @@
+table,
+th,
+td,
+caption {
+  border: 3px solid black;
+  border-collapse: collapse;
+  /* padding: 8px; */
+  /* border-spacing: 8px; */
+}
+
+/* caption {
+  border-bottom: 0;
+  background-color: black;
+  color: wheat;
+} */
+
+table {
+  width: 100%;
+}
+
+/* tr:nth-child(even) {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  background-color: rgba(255, 0, 0, 0.5);
+} */
+
+/* thead {
+  background-color: lightblue;
+}
+
+tbody {
+  background-color: darkgray;
+}
+
+tfoot {
+  background-color: tomato;
+} */
+
+/* tr {
+  border-bottom: 1px solid #dddddd;
+} */
+
+h1 {
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black; */
+  border: 1px solid black;
+  border-left-color: brown;
+}

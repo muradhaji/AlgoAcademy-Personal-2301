@@ -1,0 +1,56 @@
+p {
+  font-size: 24px;
+}
+
+.p3 {
+  /* text-align: left; */
+  /* text-align: right; */
+  /* text-align: center; */
+  /* text-align: justify; */
+
+  /* text-align-last: left; */
+  /* text-align-last: right; */
+  /* text-align-last: center; */
+  /* text-align-last: justify; */
+}
+
+.p4 {
+  font-size: 80px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+span {
+  font-size: 16px;
+  /* vertical-align: auto; */
+  /* vertical-align: baseline; */
+
+  /* vertical-align: top; */
+  /* vertical-align: middle; */
+  /* vertical-align: bottom; */
+
+  /* vertical-align: sub; */
+  /* vertical-align: super; */
+
+  /* vertical-align: text-bottom; */
+  /* vertical-align: text-top; */
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.p5 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}

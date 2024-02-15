@@ -1,0 +1,27 @@
+/* p {
+  color: red;
+} */
+
+/* div p {
+  color: red;
+} */
+
+/* div p {
+  color: red;
+} */
+
+/* section p {
+  color: red;
+} */
+
+/* div > p {
+  color: red;
+} */
+
+/* div + p {
+  color: red;
+} */
+
+div ~ p {
+  color: red;
+}

@@ -1,0 +1,23 @@
+/* div.tooltip {
+  background-color: gray;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: none;
+}
+
+h1:hover ~ div.tooltip {
+  display: block;
+} */
+
+span.tooltip {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: none;
+}
+
+input#nameInp:focus + span.tooltip {
+  display: inline;
+}

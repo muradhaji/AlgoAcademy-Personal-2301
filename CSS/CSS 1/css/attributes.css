@@ -1,0 +1,27 @@
+/* h2[style] {
+  color: red;
+} */
+
+h2[class='sun'] {
+  color: red;
+}
+
+/* h2[class~="sun"] {
+  color: red;
+} */
+
+/* h2[class|="sun"] {
+  color: red;
+} */
+
+/* h2[class^="sun"] {
+  color: red;
+} */
+
+/* h2[class$="sun"] {
+  color: red;
+} */
+
+/* h2[class*='sun'] {
+  color: red;
+} */

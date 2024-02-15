@@ -1,0 +1,68 @@
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}
+
+nav {
+  background-color: bisque;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+article {
+  background-color: burlywood;
+}
+
+/* Layout CSS */
+
+body {
+  display: grid;
+  /* grid-template-areas: 'H H H' 'N A A' 'F F F'; */
+  /* grid-template-areas: 'H H H H H' 'N N N N A' 'F F F F F'; */
+  /* grid-template-areas: 'N H H' 'N A A' 'N F F'; */
+  grid-template-areas: 'H H H' 'N A A' 'N F F';
+  grid-template-columns: 30% 35% 35%;
+}
+
+header {
+  grid-area: H;
+}
+
+nav {
+  grid-area: N;
+}
+
+article {
+  grid-area: A;
+}
+
+footer {
+  grid-area: F;
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-areas: 'H' 'N' 'A' 'F';
+    grid-template-columns: 100%;
+  }
+}

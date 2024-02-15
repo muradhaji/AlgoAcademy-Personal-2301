@@ -1,0 +1,22 @@
+ul.horizontalMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #5f6f52;
+}
+
+ul.horizontalMenu li {
+  display: inline;
+}
+
+ul.horizontalMenu li a {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  color: #f5f7f8;
+  font-weight: bold;
+}
+
+ul.horizontalMenu li a:hover {
+  background-color: #a9b388;
+}

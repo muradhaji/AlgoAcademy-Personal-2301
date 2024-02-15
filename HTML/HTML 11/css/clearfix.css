@@ -1,0 +1,22 @@
+div {
+  border: 4px solid green;
+  padding: 8px;
+}
+
+img {
+  float: left;
+}
+
+#h22 {
+  clear: both;
+}
+
+#div1::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#div2 {
+  overflow: auto;
+}

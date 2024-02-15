@@ -1,0 +1,62 @@
+div {
+  width: 200px;
+  height: 100px;
+  background-color: darkcyan;
+}
+
+div.transform {
+  /* background-color: orangered; */
+
+  /* transform-origin: 200px 75px; */
+
+  /* transform: translateX(50%); */
+  /* transform: translatey(200%); */
+  /* transform: translate(50%, 50%); */
+  /* translate: 50px 50px; */
+
+  /* transform: rotate(-45deg); */
+  /* transform: rotate(45deg); */
+  /* rotate: 45deg; */
+
+  /* transform: scaleX(1.5); */
+  /* transform: scaleY(1.5); */
+  /* transform: scale(2, 1.5); */
+  /* scale: 2 2; */
+
+  /* transform: skewX(15deg); */
+  /* transform: skewY(15deg); */
+  /* transform: skew(15deg, 15deg); */
+
+  /* transform: matrix(2, -0.3, 0, 2, 300, 400); */
+}
+
+div.transform {
+  background-color: orangered;
+
+  /* transform-origin: 100px 100px; */
+
+  /* transform: rotate(0.785398rad);  */
+  /* transform: rotate(0.125turn);  */
+  /* transform: rotateY(0deg); */
+
+  /* rotate: x 45deg; */
+  /* rotate: y 45deg; */
+  /* rotate: z 45deg; */
+  /* rotate: 1 1 1 45deg; */
+  /* rotate: 1 1 0 180deg; */
+
+  /* transform: rotate3d(1, 1, 1, 45deg); */
+}
+
+div.d2 {
+  /* transition: width 0.5s; */
+  transition: all 5s;
+  transition-timing-function: cubic-bezier(1, 1);
+}
+
+div.d2:hover {
+  /* width: 300px; */
+  /* background-color: aqua; */
+
+  rotate: 1turn;
+}

@@ -1,0 +1,59 @@
+section#pricing {
+  background-color: #616161;
+  padding: 144px 48px;
+  color: white;
+  text-align: center;
+}
+section#pricing > h3 {
+}
+section#pricing > p {
+}
+section#pricing > div.plans {
+  color: black;
+  display: flex;
+  gap: 16px;
+  margin-top: 64px;
+  align-items: center;
+}
+section#pricing > div.plans > div.plan {
+  flex: 1;
+  background-color: white;
+}
+section#pricing > div.plans > div.plan > *:not(:last-child) {
+  border-bottom: 1px solid #dddddd;
+}
+section#pricing > div.plans > div.plan > div.header {
+  color: white;
+  background-color: black;
+  padding: 32px 16px;
+}
+section#pricing > div.plans > div.plan.pro > div.header {
+  background-color: #f44336;
+  padding: 48px 16px;
+}
+section#pricing > div.plans > div.plan > p {
+  margin: 0;
+  padding: 16px;
+}
+section#pricing > div.plans > div.plan > div.price {
+  padding: 16px;
+}
+section#pricing > div.plans > div.plan > div.price > h2 {
+}
+section#pricing > div.plans > div.plan > div.price > span {
+}
+section#pricing > div.plans > div.plan > div.footer {
+  background-color: #f1f1f1;
+  padding: 24px 16px;
+}
+section#pricing > div.plans > div.plan > div.footer > a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 16px;
+  display: inline-block;
+}
+section#pricing > div.plans > div.plan > div.footer > a:hover {
+  color: black;
+  background-color: #cccccc;
+}

@@ -1,0 +1,37 @@
+/* div {
+  border: 4px solid black;
+}
+
+.div2 {
+  margin-left: 10px;
+  margin-top: -26px;
+} */
+
+/* .parent {
+  border: 4px solid red;
+  height: 300px;
+}
+
+.child {
+  border: 4px solid green;
+  width: 400px;
+  margin: 0px auto;
+  padding: 10px;
+  box-sizing: border-box;
+} */
+
+.parent {
+  background-color: yellow;
+  color: red;
+  margin-left: 20px;
+}
+
+.child2 {
+  color: initial;
+  background-color: initial;
+  margin: inherit;
+}
+
+.child21 {
+  margin: inherit;
+}

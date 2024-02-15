@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 2000px;
+  perspective-origin: 14% -30%;
+}
+.pyramid {
+  width: 400px;
+  height: 400px;
+
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+}
+
+.front,
+.back,
+.left,
+.right {
+  width: 0px;
+  height: 0px;
+  border: 200px solid transparent;
+  border-bottom-width: 346px;
+}
+
+.front {
+  border-bottom-color: rgba(255, 0, 0, 0.753);
+  transform: rotateY(0deg) rotateX(60deg) translateZ(200px);
+}
+.back {
+  border-bottom-color: rgba(0, 128, 0, 0.75);
+  transform: rotateY(180deg) rotateX(60deg) translateZ(200px);
+}
+.left {
+  border-bottom-color: rgba(0, 0, 255, 0.701);
+  transform: rotateY(-90deg) rotateX(60deg) translateZ(200px);
+}
+.right {
+  border-bottom-color: rgba(0, 0, 0, 0.72);
+  transform: rotateY(90deg) rotateX(60deg) translateZ(200px);
+}
+
+.bottom {
+  width: 0px;
+  height: 0px;
+  border: 200px solid rgba(255, 68, 0, 0.717);
+  transform: rotateX(-90deg) translateZ(0px);
+}

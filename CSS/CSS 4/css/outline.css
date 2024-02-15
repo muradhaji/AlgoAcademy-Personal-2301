@@ -1,0 +1,19 @@
+div {
+  width: 200px;
+  padding: 20px;
+  background-color: red;
+  border: 20px solid green;
+  margin: 20px;
+
+  outline-style: solid;
+  outline-width: 20px;
+  outline-color: blue;
+  /* outline-offset: 30px; */
+  /* outline-offset: -30px; */
+
+  /* outline: 10px solid yellow; */
+
+  /* margin: 50px; */
+  /* outline: 50px solid black; */
+  /* border-radius: 0px; */
+}

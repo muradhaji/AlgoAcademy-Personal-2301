@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form action="" autocomplete="off" id="tf1" oninput="calculate()">
+    <!-- <input type="text" name="user_name" required> -->
+    <!-- <input type="password" name="user_password"> -->
+
+    <!-- <input type="tel" name="user_tel" pattern="[+][0-9]{3} [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+994 12 345 67 89"> -->
+
+    <!-- <input type="text" name="user_name" value="Murad" readonly> -->
+
+    <!-- <input type="text" name="user_name"> -->
+
+    <!-- <input type="number" step="5"> -->
+
+    <!-- <input type="date" step="3"> -->
+
+    <!-- <input type="date" name="user_date" value="2023-10-18"> -->
+
+    <!-- <label>Select one choice:
+      <select name="profession">
+        <optgroup label="Web Development">
+          <option value="fe">Front-End</option>
+          <option value="be" label="Back-End"></option>
+          <option value="fs" selected>Full-Stack</option>
+        </optgroup>
+        <optgroup label="Networking">
+          <option value="sa">System Admin</option>
+          <option value="cs">Cyber Security</option>
+        </optgroup>
+      </select></label> -->
+
+    <!-- <input type="text" name="user_list" list="pll"> -->
+
+    <!-- <datalist id="pll">
+      <option value="js" label="JavaScript"></option>
+      <option value="a"></option>
+      <option value="ab"></option>
+      <option value="abef"></option>
+      <option value="abdf"></option>
+      <option value="as"></option>
+      <option value="cb"></option>
+      <option value="ce"></option>
+      <option value="bd"></option>
+    </datalist> -->
+
+    <!-- <input type="file" name="" id="" accept=".jpg" > -->
+
+
+    <!-- <input required type="checkbox" id="asd1">
+    <label for="asd1">Kurallari kabul ediyorum</label>
+
+    <br><br> -->
+
+    <!-- <label><input required type="checkbox"> Kurallari kabul ediyorum</label> -->
+
+    <input type="range" id="range_inp" value="25">
+    <br>
+    <input type=" number" id="numb_inp" value="25">
+
+    <!-- <fieldset> -->
+    <!-- <legend>Legend Basliq</legend> -->
+    <br><br>
+    <input type=" submit" value="Login">
+    <!-- </fieldset> -->
+    <!-- <input type="button" onclick="myFunc()" value="Autocomplete on">
+    <input type="button" onclick="myFunc2()" value="Autocomplete off"> -->
+  </form>
+
+  <h1 id="total">Total: 50</h1>
+
+  <script>
+    const myFunc = () => {
+      const x = document.getElementById('tf1');
+      x.removeAttribute('autocomplete');
+    }
+    const myFunc2 = () => {
+      const x = document.getElementById('tf1');
+      x.setAttribute('autocomplete', 'off');
+    }
+    const calculate = () => {
+      const inp1 = document.getElementById('range_inp');
+      const inp2 = document.getElementById('numb_inp');
+      document.getElementById('total').innerHTML = `Total: ${parseInt(inp1.value) + parseInt(inp2.value)}`;
+    }
+  </script>
+
+</body>
+
+</html>

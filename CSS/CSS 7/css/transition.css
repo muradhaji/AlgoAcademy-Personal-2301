@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  /* transition-duration: 3s; */
+  /* transition-delay: 2s; */
+  /* transition-timing-function: cubic-bezier(.1,.96,.92,.05); */
+  /* transition-property: width, background-color; */
+
+  /* transition: all 5s ease-in-out, width 3s 2s cubic-bezier(0.1, 0.96, 0.92, 0.05),
+    height 10s linear; */
+  transition: all 5s linear;
+}
+
+div:hover {
+  /* width: 300px;
+  height: 200px;
+  background-color: darkcyan; */
+
+  display: none;
+}
