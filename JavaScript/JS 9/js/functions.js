@@ -39,27 +39,29 @@
 // // getAge(whenOk, whenCancel);
 
 // let getAge = (oncancel, onnan, onsucces = () => {}) => {
-//   let answer = prompt("Enter age:");
-//   if(answer == null) {
+//   let answer = prompt('Enter age:');
+//   if (answer == null) {
 //     oncancel();
-//   } else if(isNaN(answer)) {
+//   } else if (isNaN(answer)) {
 //     onnan();
 //   } else {
 //     onsucces(Number(answer));
 //   }
-// }
+// };
+
+// let cancelFunc = () => {
+//   alert('Why you cancelled?');
+// };
 
 // getAge(
+//   cancelFunc,
 //   () => {
-//     alert("Why you cancelled?")
-//   },
-//   () => {
-//     alert("Please enter correct number")
+//     alert('Please enter correct number');
 //   },
 //   (value) => {
-//     alert(`Your age: ${value}`)
+//     alert(`Your age: ${value}`);
 //   }
-// )
+// );
 
 // getAge(
 //   () => {
@@ -115,7 +117,6 @@
 
 // showMessage();
 // showMessage2();
-
 
 // function sum1(a, b) {
 //   return a + b;
