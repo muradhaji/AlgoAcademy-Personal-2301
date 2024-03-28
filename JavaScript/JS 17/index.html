@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 600px;
+      height: 600px;
+      background-color: darkcyan;
+    }
+
+    .middle {
+      width: 400px;
+      height: 400px;
+      background-color: orangered;
+    }
+
+    .child {
+      width: 200px;
+      height: 200px;
+      background-color: darkcyan;
+    }
+
+    div {
+      padding: 20px;
+      background-color: darkcyan;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      background-color: orangered;
+    }
+
+    div#div1 h1 {
+      cursor: grab;
+      user-select: none;
+    }
+
+    div#div2 h1 {
+      cursor: grab;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <h1 id="myh" onclick="testF1(); testF2();">Heading</h1> -->
+  <!-- <h1 id="myh" onclick="testF1(this)">Heading</h1> -->
+  <!-- <h1 id="myh">Heading</h1> -->
+
+  <!-- <h1 id="myh" onclick="testF(event)" title="This is title">Heading</h1> -->
+  <!-- <h1 id="myh" title="This is title">Heading</h1> -->
+
+  <!-- <div class="parent">
+    Parent
+    <div class="middle">
+      Middle
+      <div class="child">
+        Child
+      </div>
+    </div>
+  </div> -->
+
+  <div id="div1">
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+  </div>
+  <div id="div2">
+    <h1>Heading 4</h1>
+    <h1>Heading 5</h1>
+    <h1>Heading 6</h1>
+  </div>
+
+  <!-- <a href="#about" target="_blank" onclick="asd(event)">Test link</a> -->
+
+  <script src="js/events.js"></script>
+
+</body>
+
+</html>
