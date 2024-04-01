@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div#todos {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    div#todos>div {
+      background-color: darkcyan;
+      padding: 24px;
+    }
+
+    div#todos>div>span.userid {}
+
+    div#todos>div>div {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    div#todos>div>div>span.completed {
+      font-size: 24px;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    div#todos>div>div>h2.title {}
+
+    #loading {
+      background-color: darkcyan;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #spinner {
+      width: 100px;
+      height: 100px;
+      border: 8px solid white;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      animation-name: rotateSpinner;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes rotateSpinner {
+      0% {
+        rotate: 0deg;
+      }
+
+      100% {
+        rotate: 360deg;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    <input type="text" name="title" id="title">
+
+    <select name="userId" id="userId">
+    </select>
+  </form>
+
+  <button onclick="getAllTodos()">Get all todos</button>
+
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+
+  <div id="todos"></div>
+
+  <script src="js/todo.js"></script>
+</body>
+
+</html>
