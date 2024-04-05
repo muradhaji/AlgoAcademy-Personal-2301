@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+div#todoForm {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+div#todoForm > input {
+  flex: 4;
+  font-size: 20px;
+}
+div#todoForm > div#createBtn {
+  flex: 1;
+  background-color: darkcyan;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+div#todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+div#todoContainer > div.todo {
+  background-color: darkcyan;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+div#todoContainer > div.todo > span.status {
+  flex: 1;
+}
+
+div#todoContainer > div.todo > span.content {
+  flex: 3;
+  color: white;
+}
+div#todoContainer > div.todo > div.editInput {
+  flex: 3;
+  display: none;
+}
+div#todoContainer > div.todo > div.editInput > input {
+  font-size: 20px;
+}
+
+div#todoContainer > div.todo > div.buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+div#todoContainer > div.todo > div.buttons > span {
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+div#todoContainer > div.todo > div.buttons > span.edit {
+}
+
+div#todoContainer > div.todo > div.buttons > span.save {
+  display: none;
+}
+
+div#todoContainer > div.todo > div.buttons > span.delete {
+}
